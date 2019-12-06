@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .left {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+
+    div {
+      flex: none;
+      overflow: hidden;
+    }
+
+    .book {
+      border: 2px solid chocolate;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 10px;
+
+      .book-name {
+        padding: 10px;
+        background: lightsalmon;
+      }
+
+      .book-genre {
+        padding: 10px;
+        background: lightcoral;
+      }
+
+      .author {
+        border: 2px solid navy;
+        margin: 10px;
+        border-radius: 10px;
+
+        .author-name {
+          padding: 10px;
+          background: lightblue;
+        }
+
+        .author-age {
+          padding: 10px;
+          background: lightseagreen;
+        }
+
+        .author-books {
+          padding: 10px;
+          background: lightgrey;
+
+          .author-book-name {
+            padding: 2px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: none;
+    padding: 20px;
+    background: darkblue;
+    color: white;
+    overflow: auto;
+  }
+}
